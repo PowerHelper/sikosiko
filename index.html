@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💃 فتيات جميلات</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src='//libtl.com/sdk.js' data-zone='9026863' data-sdk='show_9026863'></script>
+<style>
+    body {
+        font-family: 'Tajawal', sans-serif;
+        direction: rtl;
+        text-align: center;
+        background: linear-gradient(145deg, #330867, #30cfd0);
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 450px;
+        width: 100%;
+        padding: 30px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        color: #333;
+    }
+    h1 {
+        color: #c2185b;
+        font-size: 26px;
+    }
+    .content {
+        display: none;
+        margin-top: 20px;
+    }
+    .bio-link {
+        display: block;
+        font-size: 18px;
+        color: #0d47a1;
+        text-decoration: none;
+        margin: 20px 0;
+    }
+    .bio-link:hover {
+        text-decoration: underline;
+    }
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        color: white;
+        background: #e91e63;
+        margin-top: 15px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    button:hover {
+        background: #c2185b;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>💃 فتيات جميلات بانتظارك</h1>
+    <p>اضغط على الزر أدناه لعرض التفاصيل بعد مشاهدة إعلان قصير</p>
+    <button id="showContent">👀 عرض التفاصيل</button>
+
+    <div class="content" id="content">
+        <p>✨ يمكنك الآن مشاهدة المقاطع عبر رابط البايو:</p>
+        <a href="https://t.me/yourusername" target="_blank" class="bio-link">https://t.me/yourusername</a>
+        <button onclick="openBio()">📲 اضغط زر البايو</button>
+    </div>
+</div>
+
+<script>
+document.getElementById("showContent").addEventListener("click", function () {
+    show_9026863().then(() => {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("showContent").style.display = "none";
+    }).catch(() => {
+        alert("❌ تعذر عرض الإعلان. حاول مرة أخرى.");
+    });
+});
+
+function openBio() {
+    window.open("https://t.me/yourusername", "_blank");
+}
+</script>
+</body>
+</html>
