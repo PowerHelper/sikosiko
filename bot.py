@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-TOKEN = '7945560732:AAGpQJBXfB7uldG26mesMg1RsvEz3bNnwgU'  # حط التوكن ديالك هنا
+TOKEN = '8366050188:AAFdgNUJ0KUGBo7JDYujyCmI4lJcDMQ38OA'  # حط التوكن ديالك هنا
 bot = telebot.TeleBot(TOKEN)
 
 MINI_APP_URL = "https://yourgithubusername.github.io/yourrepo/index.html"  # رابط صفحتك في GitHub Pages أو استضافة أخرى
